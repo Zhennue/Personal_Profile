@@ -1,0 +1,99 @@
+body {
+    background: #f4f4f9 url('/pictures/Achievements.gif');
+    background-size: cover;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.achievements-container {
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px 28px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    margin: 32px 0;
+}
+
+.achievements-title {
+    font-size: 2rem;
+    color: #2366a8;
+    text-align: center;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.achievement-card {
+    background: #f0f6fb;
+    border-radius: 8px;
+    padding: 20px 24px;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(35, 102, 168, 0.04);
+    margin-bottom: 18px;
+    color: #222;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.achievement-card:hover {
+    background: #2366a8;
+    box-shadow: 0 4px 16px rgba(35, 102, 168, 0.10);
+    color: #fff;
+}
+
+.achievement-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: inherit;
+}
+
+.achievement-description {
+    font-size: 1rem;
+    color: #4a4a4a;
+    margin-top: 2px;
+    color: inherit;
+}
+
+.achievement-card:hover .achievement-title,
+.achievement-card:hover .achievement-description {
+    color: #fff;
+}
+
+.achievement-link {
+    text-decoration: none;
+    display: block;
+}
+
+.achievement-link:focus .achievement-card,
+.achievement-link:hover .achievement-card {
+    outline: 2px solid #2366a8;
+    outline-offset: 2px;
+    transform: scale(1.02);
+}
+
+@media (max-width: 600px) {
+    .achievements-container {
+        padding: 16px 6px;
+    }
+    .achievements-title {
+        font-size: 1.3rem;
+    }
+    .achievement-card {
+        padding: 12px 8px;
+    }
+}

@@ -1,0 +1,66 @@
+body {
+    background-image: url(/pictures/About\ me.gif);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me-card {
+    width: 90%;
+    max-width: 600px;
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+.about-me-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
+}
+
+.about-me-card h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.about-me-card h3 {
+    font-size: 1.1rem;
+    color: #3498db;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.about-me-card p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #444;
+    margin: 0 auto 20px;
+    width: 90%;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.divider {
+    height: 3px;
+    width: 50px;
+    background: #3498db;
+    margin: 20px auto;
+    border-radius: 2px;
+    transition: width 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+.about-me-card:hover .divider {
+    width: 100px;
+}

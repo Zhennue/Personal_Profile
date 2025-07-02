@@ -1,0 +1,86 @@
+body {
+    background: #f4f4f9 url('/pictures/Education.gif');
+    background-size: cover;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-container {
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px 28px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    margin: 32px 0;
+}
+
+.education-title {
+    font-size: 2rem;
+    color: #2366a8;
+    text-align: center;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.education-entry {
+    background: #f0f6fb;
+    border-radius: 8px;
+    padding: 20px 24px;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(35, 102, 168, 0.04);
+}
+
+.education-entry:hover {
+    background: #2366a8;
+    box-shadow: 0 4px 16px rgba(35, 102, 168, 0.10);
+}
+
+.institution {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #222;
+    margin: 0 0 6px 0;
+}
+
+.degree {
+    font-size: 1rem;
+    color: #4a4a4a;
+    margin: 0 0 4px 0;
+}
+
+.duration {
+    font-size: 0.95rem;
+    color: #888;
+    margin: 0;
+}
+
+.education-entry:hover .institution,
+.education-entry:hover .degree,
+.education-entry:hover .duration {
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .education-container {
+        padding: 16px 6px;
+    }
+    .education-title {
+        font-size: 1.3rem;
+    }
+    .education-entry {
+        padding: 12px 8px;
+    }
+}
