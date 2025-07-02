@@ -1,5 +1,5 @@
 body {
-    background-image: url(/pictures/About\ me.gif);
+    background-image: url(./pictures/About\ me.gif);
     background-position: center;
     background-size: cover;
     min-height: 100vh;

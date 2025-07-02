@@ -1,5 +1,5 @@
 body {
-    background: #f4f4f9 url('/pictures/Achievements.gif');
+    background: #f4f4f9 url('./pictures/Achievements.gif');
     background-size: cover;
     font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
     margin: 0;
